@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nazar Viznytsya | Getting Started With HTML and CSS</title>
+    <link rel="shortcut icon" href="assets/images/favicon.jpg?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/article.css" media="all">
+    <link rel="preload" href="assets/fonts/Nunito_Sans/NunitoSans-Bold.ttf" as="font" type="font/ttf">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/images/Logo.png"></a>
+        <nav>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="article-list.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-nav">
+            <p><i class="fas fa-bars" title="Menu"></i>
+        </div>
+    </header>
+    <main>
+        <div class="hero-banner hero-css">
+            <div class="overlay">
+                <div class="hero-container">
+                    <h1>Getting Started With HTML and CSS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <h2 class="heading">Getting Started With HTML and CSS</h2>
+                <h3 class="date">October 19, 2021</h3>
+                <h3 class="date">By: Nazar Viznytsya</h3>
+            </div>
+            <article>
+                <h4>What is HTML and CSS?</h4>
+                <p class="article-p">
+                    Every website you open has something in common whether it be a complicated website with lots of
+                    bells and whistles like Instagram, or a simple website that contains the answer to that one
+                    chemistry question on your assignment. The connecting link that makes a website a website is that
+                    they all use HTML and CSS. HyperText Markup Language (HTML) is essentially the bones of a website.
+                    It broadly defines what elements are in a website. For instance, it can define a heading, a
+                    paragraph, an image, or even another website inside yours; However, if you only look at our bones
+                    each person seems nearly identical, that’s where Cascading Style Sheets (CSS) come in. CSS styles
+                    the website, with CSS you can add colours, borders, transitions, animations, and other aesthetic
+                    devices.
+                </p>
+                <h4>Getting Started With HTML</h4>
+                <p class="article-p">
+                    HTML is made up of elements - pieces of a website that each serve a purpose. There are elements for
+                    virtually every part of a website, specific elements exist for: images, headings, paragraphs, entire
+                    sections, forms, and many others. An element for a paragraph looks like the following:
+                </p>
+                <p class="code">
+                    &lt;<span class="b">p</span>&gt;<span class="w">Some Text</span>&lt;/<span class="b">p</span>&gt;
+                </p>
+                <p class="article-p">
+                    In between the first set of &lt;&gt; we have the name of the element, which is "p", what HTML uses
+                    for
+                    paragraphs. “&lt;p&gt;” is called the opening tag of the element. The closing tag is “&lt;/p&gt;”,
+                    and in
+                    between the opening and closing tags are the text content of the element. Note, some elements,
+                    like an image, don’t have text content within them, these elements don’t have a closing tag, and
+                    are just contained in one opening tag.
+                </p>
+                <p class="article-p">Some other examples of tags are: </p>
+                <p class="code">
+                    &lt;<span class="b">h2</span>&gt;<span class="w">Some Text</span>&lt;/<span
+                        class="b">h2</span>&gt;<br>
+                    &lt;<span class="b">div</span>&gt;<span class="w">Some Text</span>&lt;/<span
+                        class="b">div</span>&gt;<br>
+                    &lt;<span class="b">br</span>&gt;
+                </p>
+                <p class="article-p">The “h2” is a tag for the second-largest heading, there exist “h1”-”h6” tags just
+                    for headings. The “div” tag is just a container, we’ll discuss it in more detail later. The “br” tag
+                    is a break line tag and it acts essentially as an enter key. This is useful as HTML will remove all
+                    unnecessary enter keys before running. Notice how it’s a self-closing tag.
+                </p>
+                <p class="article-p">A list of elements can be found at: <a
+                        href="https://www.w3schools.com/TAGS/default.ASP">W3Schools</a></p>
+                <h4>More Advanced HTML</h4>
+                <p class="article-p">Some elements of websites carry more data than just content text. Images contain
+                    links to the image, same with videos, and regular old links contain both content text and a link. We
+                    give elements these extra values inside of the opening tag in the form of attributes. For example
+                    below is an image tag:
+                </p>
+                <p class="code">
+                    &lt;<span class="b">img</span> <span class="lb">src</span><span class="w">=</span><span
+                        class="o">"Image.png"</span>&gt;
+                </p>
+                <p class="article-p">In this tag the attribute declaring part is src=“Image.png”, here we set the
+                    attribute of the source of the image (Called “src” in HTML) to the value “Image.png”. This tells the
+                    HTML to display the Image.png file as an image on the website. All attribute declarations follow
+                    this format.
+                </p>
+                <p class="article-p">Below are some common attribute declarations within elements:</p>
+                <p class="code">
+                    &lt;<span class="b">img</span> <span class="lb">src</span><span class="w">=</span><span
+                        class="o">"Image.png"</span> <span class="lb">alt</span><span class="w">=</span><span
+                        class="o">"Image Sample"</span>&gt;
+                    <br>&lt;<span class="b">button</span> <span class="lb">type</span><span class="w">=</span><span
+                        class="o">"submit"</span>&gt;
+                    <br>&lt;<span class="b">a</span> <span class="lb">href</span><span class="w">=</span><span
+                        class="o">"www.google.com"</span>&gt;<span class="w">Link</span>&lt;/<span
+                        class="b">a</span>&gt;
+                </p>
+                <p class="article-p">The first image tag adds an alt element, the “alt” is the text that displays if a
+                    user doesn’t have an image and displays only text, usually, this happens if they use a screen
+                    reader. The second element is a button, specifically, a submit button which is used extensively in
+                    forms. The final element is a link, the “href” is the actual link part which is where you’ll go if
+                    you click the link, and the content is what you see as the link on the website.
+                </p>
+                <h4>Nested HTML Tags</h4>
+                <p class="article-p">HTML elements can also be put into each other for logical ordering. For instance,
+                    you might want an element that contains all the links in your navigation menu. To put HTML elements
+                    inside of each other put the element to nest inside of the content section:
+                </p>
+                <p class="code">
+                    &lt;<span class="b">div</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span>&gt;<span class="w">Nested Text</span>&lt;/<span
+                        class="b">p</span>&gt;<br>
+                    &lt;/<span class="b">div</span>&gt;
+                </p>
+                <p class="article-p">Here we put a paragraph tag inside of a div container. </p>
+                <h4>Getting Started With CSS</h4>
+                <p class="article-p">All the HTML we have written right now has nothing more than the basic styling on
+                    it, if you want to add custom styling we use CSS. CSS is filled with style declarations, a style
+                    declaration looks like the following:
+                </p>
+                <p class="code"><span class="lb">background-color</span><span class="w">:</span> <span
+                        class="o">#000000</span><span class="w">;</span></p>
+                <p class="article-p">Here we set the background colour style to be the hexadecimal colour black. All CSS
+                    declarations follow this basic format.</p>
+                <p class="article-p">A full list of style declarations can be found at: <a
+                        href="https://www.w3schools.com/cssref">W3Schools</a></p>
+                <h4>Adding CSS to HTML</h4>
+                <p class="article-p">To add style to an element you have three options, inline, internal, and external.
+                </p>
+                <h5>Inline Styling</h5>
+                <p class="article-p">For Inline styling you add all your styles into the attribute style on an html
+                    element. To set the width and height of our image from before using inline:
+                </p>
+                <p class="code">
+                    &lt;<span class="b">img</span> <span class="lb">src</span><span class="w">=</span><span
+                        class="o">"Image.png"</span>
+                    <span class="lb">style</span><span class="w">=</span><span class="o">"width:100px;
+                        height:100px;"</span>&gt;
+                </p>
+                <p class="article-p">Here we take our image from last time and we make it have the fixed size of 100px
+                    by 100px.</p>
+                <h5>Internal Styling</h5>
+                <p class="article-p">For Internal styling we use the special HTML tag: "&lt;style&gt;&lt;/style&gt;" and
+                    inside we put our CSS
+                    declarations. The declarations in here are a little different because they need to say what element
+                    they’re targeting, they will look like:
+                </p>
+                <p class="code">
+                    &lt;<span class="b">style</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="y">img</span><span class="w">{</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="lb">width</span><span
+                        class="w">:</span> <span class="g">100px</span><span class="w">;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="lb">height</span><span
+                        class="w">:</span> <span class="g">100px</span><span class="w">;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="w">}</span><br>
+                    &lt;/<span class="b">style</span>&gt;
+                </p>
+                <p class="article-p">The tag before the curly brackets is the target, here we apply the style to all
+                    images. If we want to target only some elements we can use classes and IDs. A class is an identifier
+                    that you add to multiple elements, you add a class to an element by using the attribute class in an
+                    HTML element. You can add multiple classes by separating them with a space. An ID is a label for
+                    only one element. We add it with the attribute id to HTML elements.
+                </p>
+
+                <p class="article-p">To reference classes or IDs in an internal stylesheet we use a “.” before the class
+                    name or
+                    a “#” before an ID name. Implementing all that we’ve learned so far we have:
+                </p>
+
+                <p class="code">
+                    &lt;<span class="b">style</span>&gt;<br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="y">div</span><span class="w">{</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="lb">background-color</span><span
+                        class="w">:</span> <span class="o">black</span><span class="w">;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="w">}</span><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="y">#heading</span><span class="w">{</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="lb">text-transform</span><span
+                        class="w">:</span> <span class="o">uppercase</span><span class="w">;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="w">}</span><br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="y">.red-text</span><span class="w">{</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="lb">color</span><span
+                        class="w">:</span> <span class="o">red</span><span class="w">;</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="w">}</span><br>
+
+                    &lt;/<span class="b">style</span>&gt;<br><br>
+
+                    &lt;<span class="b">div</span>&gt;<br>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">h1</span> <span class="lb">class</span><span
+                        class="w">=</span><span class="o">"red-text"</span> <span class="lb">id</span><span
+                        class="w">=</span><span class="o">"heading"</span>&gt;<span class="w">Sample
+                        Website</span>&lt;/<span class="b">h1</span>&gt;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="b">p</span> <span class="lb">class</span><span
+                        class="w">=</span><span class="o">"red-text"</span>&gt;<span class="w">Lorem
+                        Ipsum</span>&lt;/<span class="b">p</span>&gt;<br>
+
+                    &lt;/<span class="b">div</span>&gt;
+                </p>
+                <p class="article-p">This creates the website:</p>
+
+                <div class="img-center-container" style="margin-top: 0px;">
+                    <figure style="margin-top: 0px;">
+                        <img class="article-img" src="assets/images/css-example.png" style="margin-top: 8px;">
+                    </figure>
+                </div>
+
+                <p class="article-p">Here we have an “h1” element and “p” element nested within a “div” element. We
+                    style all divs with a black background colour, we assign both texts a class of “red-text” and we
+                    make all text for the element with an ID of “heading” to be uppercase.
+                </p>
+                <p class="article-p">Notice that to run the HTML file all we do is open the file in a web browser.
+                    Note, all HTML files must end with .html, and all CSS files must end with .css
+                </p>
+                <h5>External Styling</h5>
+                <p class="article-p">Finally to use external CSS, we copy the inner text of the style element into an
+                    external file and then we reference it with the following HTML tag:
+                </p>
+                <p class="code">
+                    &lt;<span class="b">link</span> <span class="lb">rel</span><span class="w">=</span><span
+                        class="o">"stylesheet"</span> <span class="lb">href</span><span class="w">=</span><span
+                        class="o">"index.css"</span>&gt;
+                </p>
+                <p class="article-p">Here, we import the external stylesheet located in the file index.css</p>
+                <h4>What's Next?</h4>
+                <p class="article-p">We have now learned the basics of HTML and CSS. We know the structure of HTML and
+                    CSS and how to run it. All websites use the following structure which we have defined and we are now
+                    well on our way to creating more advanced websites. The best way for you to further your knowledge
+                    now is to start making websites. Create ideas of what you want in your website, and then research
+                    how to do it if you do not know. This is the way I learned, and hopefully, it will serve you well.
+                </p>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://twitter.com/mayor_kid" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/nazarviznytsya/" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+                <li><a href="https://github.com/Nazarchamp" target="_blank"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </nav>
+        <p class="copyright">&copy; 2021 Nazar Viznytsya</p>
+    </footer>
+</body>
+
+</html>
