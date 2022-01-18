@@ -35,6 +35,8 @@ function collapse(el) {
     if (!isMobile.matches) {
         getByColor(el).classList.add("expand");
         focussedVar.classList.add("dissapearer");
+    }else{
+        focussedVar.style.display = "none";
     }
 
     focussedVar.id = "";
